@@ -1,7 +1,6 @@
 import TestPackage.InitDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -14,11 +13,11 @@ public class BaseTest  {
 
     }
 
-//    @AfterMethod
-//    public void close(){
-//        WebDriver driver = InitDriver.driver;
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void close(){
+        WebDriver driver = InitDriver.driver;
+        driver.quit();
+    }
     public void waitforme(){
         try{
             Thread.sleep(1000);
