@@ -44,9 +44,7 @@ public class LoginSwabs extends BasePage {
         String[] passwordsArray = passwordsText.split("\n");
         for (String password : passwordsArray) {
             passwords.add(password);
-            // if (!password.startsWith("Password for all users:")) {
 
-            // }
         }
         System.out.println(passwords);
     }
@@ -69,15 +67,12 @@ public class LoginSwabs extends BasePage {
     }
 
     public void clickLoginButton() {
-
         loginButton.click();
-
     }
 
-    public void checkAssert() {
+    public void checkHeaderTtle() {
         String  ActualTitle = driver.getTitle();
         String  ExpectedTitle = "Swag Labs";
-
 
         if (ActualTitle.equals(ExpectedTitle)){
 

@@ -1,6 +1,5 @@
 import TestPackage.InitDriver;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest  {
@@ -8,15 +7,15 @@ public class BaseTest  {
     @BeforeMethod
     public void setUp(){
         InitDriver.driverinit();
-      //  WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
 
     }
 
-    @AfterMethod
-    public void close(){
-        WebDriver driver = InitDriver.driver;
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void close(){
+//        WebDriver driver = InitDriver.driver;
+//        driver.quit();
+//    }
     public void waitforme(){
         try{
             Thread.sleep(1000);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="TestSuite" time="5.498" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="TestSuite" time="6.338" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
@@ -63,9 +63,9 @@
     <property name="sun.stdout.encoding" value="cp866"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="LoginSwabTest" name="logiWithCorrectCredentials" time="0.449"/>
-  <testcase classname="LoginSwabTest" name="login" time="1.143"/>
-  <testcase classname="LoginSwabTest" name="loginWithSecondLogin" time="1.405"/>
-  <testcase classname="LoginSwabTest" name="loginwithLogin" time="1.248"/>
-  <testcase classname="LoginSwabTest" name="loginwithPass" time="1.253"/>
+  <testcase classname="LoginSwabTest" name="logiWithCorrectCredentials" time="0.813"/>
+  <testcase classname="LoginSwabTest" name="login" time="1.156"/>
+  <testcase classname="LoginSwabTest" name="loginWithSecondLogin" time="1.748"/>
+  <testcase classname="LoginSwabTest" name="loginwithLogin" time="1.312"/>
+  <testcase classname="LoginSwabTest" name="loginwithPass" time="1.309"/>
 </testsuite>

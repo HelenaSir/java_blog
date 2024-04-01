@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import static TestPackage.InitDriver.driver;
 
 public class LoginSwabTest extends BaseTest {
-    LoginSwabs login = new LoginSwabs();
     @Test
     @Description("Login page without login pas")
 
@@ -36,15 +35,13 @@ public class LoginSwabTest extends BaseTest {
 
     @Test
     @Description("Login with correct login and password ")
-
     public void logiWithCorrectCredentials() {
         LoginSwabs login = new LoginSwabs();
 
         login.enterUsername();
         login.enterPassword();
         login.clickLoginButton();
-        login.checkAssert();
-
+        login.checkHeaderTtle();
 
     }
 
